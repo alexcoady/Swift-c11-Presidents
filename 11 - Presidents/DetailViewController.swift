@@ -12,6 +12,23 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var webView: UIWebView!
+    
+    private var languageButton: UIBarButtonItem?
+    private var languagePopoverController: UIPopoverController?
+    
+    var languageString: String = "" {
+        didSet {
+            if (languageString != oldValue) {
+                configureView()
+            }
+            
+            if let popoverController = languagePopoverController {
+                
+                popoverController.dismissPopoverAnimated(true)
+                languagePopoverController = nil
+            }
+        }
+    }
 
     var detailItem: AnyObject? {
         didSet {
@@ -27,7 +44,7 @@ class DetailViewController: UIViewController {
             if let label = self.detailDescriptionLabel {
                 
                 let dict = detail as [String: String]
-                let urlString = dict["url"]!
+                let urlString = modifyURLForLanguage(url: dict["url"]!, language: languageString)
                 label.text = urlString
                 
                 let url = NSURL(string: urlString)!
@@ -42,15 +59,60 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+        
+            languageButton = UIBarButtonItem(title: "Choose language", style: .Plain, target: self, action: "toggleLanguagePopover")
+            navigationItem.rightBarButtonItem = languageButton
+        }
+
         self.configureView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-
+    private func modifyURLForLanguage(#url: String, language lang: String?) -> String {
+        
+        var newUrl = url
+        
+        if let langStr = lang {
+            
+            let range = NSMakeRange(7, 2)
+            
+            if ( !langStr.isEmpty && (url as NSString).substringWithRange(range) != langStr ) {
+            
+                newUrl = (url as NSString).stringByReplacingCharactersInRange(range, withString: langStr)
+            }
+        }
+        
+        return newUrl
+    }
+    
+    func toggleLanguagePopover () {
+        
+        if languagePopoverController == nil {
+            
+            let languageListController = LanguageListController()
+            languageListController.detailViewController = self
+            
+            languagePopoverController = UIPopoverController(contentViewController: languageListController)
+            languagePopoverController?.presentPopoverFromBarButtonItem(languageButton!, permittedArrowDirections: .Any, animated: true)
+        
+        } else {
+            
+            languagePopoverController?.dismissPopoverAnimated(true)
+            languagePopoverController = nil
+        }
+    }
+    
+    func popoverControllerDidDismissPopover(popoverController: UIPopoverController) {
+        
+        if popoverController == languagePopoverController {
+            
+            languagePopoverController = nil
+        }
+    }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C628525E1A929797002F7312 /* LanguageListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C628525D1A929797002F7312 /* LanguageListController.swift */; };
 		C6B840021A92564E00EA1D23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B840011A92564E00EA1D23 /* AppDelegate.swift */; };
 		C6B840041A92564E00EA1D23 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B840031A92564E00EA1D23 /* MasterViewController.swift */; };
 		C6B840061A92564E00EA1D23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B840051A92564E00EA1D23 /* DetailViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C628525D1A929797002F7312 /* LanguageListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageListController.swift; sourceTree = "<group>"; };
 		C6B83FFC1A92564E00EA1D23 /* 11 - Presidents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "11 - Presidents.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B840001A92564E00EA1D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6B840011A92564E00EA1D23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				C6B8400A1A92564E00EA1D23 /* Images.xcassets */,
 				C6B8400C1A92564E00EA1D23 /* LaunchScreen.xib */,
 				C6B83FFF1A92564E00EA1D23 /* Supporting Files */,
+				C628525D1A929797002F7312 /* LanguageListController.swift */,
 			);
 			path = "11 - Presidents";
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				C6B840061A92564E00EA1D23 /* DetailViewController.swift in Sources */,
 				C6B840041A92564E00EA1D23 /* MasterViewController.swift in Sources */,
 				C6B840021A92564E00EA1D23 /* AppDelegate.swift in Sources */,
+				C628525E1A929797002F7312 /* LanguageListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +419,7 @@
 				C6B8401F1A92564F00EA1D23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6B840201A92564F00EA1D23 /* Build configuration list for PBXNativeTarget "11 - PresidentsTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				C6B840221A92564F00EA1D23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
