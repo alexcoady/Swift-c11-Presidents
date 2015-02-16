@@ -14,6 +14,7 @@
 		C6B8400B1A92564E00EA1D23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B8400A1A92564E00EA1D23 /* Images.xcassets */; };
 		C6B8400E1A92564E00EA1D23 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B8400C1A92564E00EA1D23 /* LaunchScreen.xib */; };
 		C6B8401A1A92564F00EA1D23 /* _1___PresidentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B840191A92564F00EA1D23 /* _1___PresidentsTests.swift */; };
+		C6B840241A92644C00EA1D23 /* PresidentList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6B840231A92644C00EA1D23 /* PresidentList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C6B840131A92564F00EA1D23 /* 11 - PresidentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "11 - PresidentsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B840181A92564F00EA1D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6B840191A92564F00EA1D23 /* _1___PresidentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_1___PresidentsTests.swift"; sourceTree = "<group>"; };
+		C6B840231A92644C00EA1D23 /* PresidentList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PresidentList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		C6B83FFE1A92564E00EA1D23 /* 11 - Presidents */ = {
 			isa = PBXGroup;
 			children = (
+				C6B840231A92644C00EA1D23 /* PresidentList.plist */,
 				C6B840011A92564E00EA1D23 /* AppDelegate.swift */,
 				C6B840031A92564E00EA1D23 /* MasterViewController.swift */,
 				C6B840051A92564E00EA1D23 /* DetailViewController.swift */,
@@ -198,6 +201,7 @@
 				C6B840091A92564E00EA1D23 /* Main.storyboard in Resources */,
 				C6B8400E1A92564E00EA1D23 /* LaunchScreen.xib in Resources */,
 				C6B8400B1A92564E00EA1D23 /* Images.xcassets in Resources */,
+				C6B840241A92644C00EA1D23 /* PresidentList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
