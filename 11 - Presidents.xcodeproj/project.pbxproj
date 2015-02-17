@@ -16,6 +16,7 @@
 		C6B8400E1A92564E00EA1D23 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B8400C1A92564E00EA1D23 /* LaunchScreen.xib */; };
 		C6B8401A1A92564F00EA1D23 /* _1___PresidentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B840191A92564F00EA1D23 /* _1___PresidentsTests.swift */; };
 		C6B840241A92644C00EA1D23 /* PresidentList.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6B840231A92644C00EA1D23 /* PresidentList.plist */; };
+		C6E141B61A934868001D419B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E141B51A934868001D419B /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		C6B840181A92564F00EA1D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6B840191A92564F00EA1D23 /* _1___PresidentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_1___PresidentsTests.swift"; sourceTree = "<group>"; };
 		C6B840231A92644C00EA1D23 /* PresidentList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PresidentList.plist; sourceTree = "<group>"; };
+		C6E141B51A934868001D419B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				C6B8400C1A92564E00EA1D23 /* LaunchScreen.xib */,
 				C6B83FFF1A92564E00EA1D23 /* Supporting Files */,
 				C628525D1A929797002F7312 /* LanguageListController.swift */,
+				C6E141B51A934868001D419B /* RootViewController.swift */,
 			);
 			path = "11 - Presidents";
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E141B61A934868001D419B /* RootViewController.swift in Sources */,
 				C6B840061A92564E00EA1D23 /* DetailViewController.swift in Sources */,
 				C6B840041A92564E00EA1D23 /* MasterViewController.swift in Sources */,
 				C6B840021A92564E00EA1D23 /* AppDelegate.swift in Sources */,
